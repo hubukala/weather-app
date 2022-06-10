@@ -25,7 +25,7 @@ let weatherId;
 
 const getGeolocation = (city) => {
   return new Promise((resolve, reject) => {
-    const call = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api}`;
+    const call = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api}`;
     fetch(call)
       .then((response) => {
         return response.json();
