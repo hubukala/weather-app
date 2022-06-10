@@ -1,0 +1,126 @@
+html {
+    display:flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(0deg, rgba(48, 5, 68, 1) 0%, rgba(98, 10, 138, 1) 67%, rgba(90, 105, 246, 1) 100%);
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    padding: 2rem 2rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color:aliceblue;
+    margin-bottom: 3rem;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+input {
+    height: 40px;
+    width: 55%;
+    border: 2px solid rgb(183, 183, 183);
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 9px;
+    margin: 5px;
+    color: aliceblue;
+}
+
+::placeholder {
+    color: rgb(222, 222, 222);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.8;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 1px 1px 14px -2px rgb(255, 255, 255);
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+button:hover {
+    color:navy;
+}
+
+.main-box {
+    border-radius: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(29, 38, 121);
+    background: linear-gradient(180deg, rgba(29, 38, 121, 1) 0%, rgba(39, 51, 163, 1) 100%);    
+    box-shadow: 8px 8px 24px 0px rgb(42, 43, 58);
+}
+
+.display-city, .display-date, .display-weather, .display-weather-temp {
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.display-city {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    padding-top: 1rem;
+}
+
+.display-weather {
+    font-size: 16px;
+    margin-top: 0.5rem;
+}
+
+.display-weather-temp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 52px;
+    margin-bottom: 0.5rem;
+}
+
+.display-date{
+    padding-bottom: 1rem;
+}
+
+.weather-icon{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    color:aliceblue;
+}
+
+@media screen and (max-width: 480px) {
+    .display-city {
+        font-size: 26px;
+    }
+    .display-date{
+        font-size: 14px;
+    }
+    .main-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    input{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 758px) {
+    .main-box {
+        margin: auto;
+        width: 400px;
+    }
+}
