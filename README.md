@@ -1,7 +1,7 @@
 # Weather App
 ### Allows to check current weather in specific place
 
-### Live version of the project is available [HERE](https://vercel.com/hubukala/weather-app)
+### Live version of the project is available [HERE](https://hubukala-weather-app.vercel.app/)
 
 ### How to use:
 1. Enter your city name in the search bar (i.e. 'Warsaw')
